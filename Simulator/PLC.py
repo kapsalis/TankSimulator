@@ -9,7 +9,7 @@ import modbus_tk.defines as cst
 from modbus_tk import modbus_tcp
 import time
 import threading
-import csv
+import csv 
 
 class modbusPLC:
     def __init__(self, Address, Port, option):
