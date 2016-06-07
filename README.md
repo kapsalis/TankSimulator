@@ -2,8 +2,8 @@
     Implemented by: Jasdheer Maan, Michail Kapsalakis, and Tho Le Phuoc
     Instructor: Davide Fauri
     
-    For the IST Seminar in Technology University of Eindhoven
-    2016
+    IST Seminar - Technology University of Eindhoven
+    @2016
 
 ### How to run the WATER TANK Simulator in DeterLAB
 ### 1. Create an experiment
