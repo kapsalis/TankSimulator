@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+
+## Water Tank Simulator
+## It simulates the operation of a Sensor that controls the lowest level of the tank
+## It acts as a Modbust TCP Server
+
 import modbus_tk
 import modbus_tk.defines as cst
 from modbus_tk import modbus_tcp
