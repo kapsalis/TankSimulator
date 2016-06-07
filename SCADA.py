@@ -2,6 +2,7 @@
 
 ## Water Tank Simulator
 ## Simulates the SCADA System, which receives the state of the tank from the PLC and changes the state of pump and valve
+## It acts as a Modbus TCP Client
 
 import modbus_tk
 import modbus_tk.defines as cst
