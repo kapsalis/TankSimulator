@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+
+## Water Tank Simulator
+## Simulates the operation of PLC, which communicate with two sensors, a pump and a valve
+
 import modbus_tk
 import modbus_tk.defines as cst
 from modbus_tk import modbus_tcp
