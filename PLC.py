@@ -2,7 +2,7 @@
 
 ## Water Tank Simulator
 ## Simulates the operation of PLC, which communicate with two sensors, a pump and a valve
-## It acts as a Modbus TCP client and Modbus TCP server
+## It acts as a Modbus TCP client and Modbus TCP server 
 
 import modbus_tk
 import modbus_tk.defines as cst
