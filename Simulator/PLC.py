@@ -86,15 +86,15 @@ def sensors(client_H,  client_L):
         
         ##Saves the state of the tank in the Register 1
         plc.slave.set_values('0',1,state)
-        #print "sL=%d and sH=%d, state=%d"%(sensor_L, sensor_H, state)
+        print "sL=%d and sH=%d, state=%d"%(sensor_L, sensor_H, state)
         
         ## Reads the values of register 2 and 3 in which the SCADA writes the values of the actuators
         ##
         pump = plc.slave.get_values('0',2)[0]
         valve = plc.slave.get_values('0',3)[0]
         
-        #print "Pump=%d and Valve=%d"%(Pump, Valve)
-        #print "-----------------"
+        print "Pump=%d and Valve=%d"%(Pump, Valve)
+        print "-----------------"
         
         ##Opens a file and writes the state of the tank on it. The graph will use this value
         state_w =  open('Tank/plc_tank_state.csv', 'wb')
