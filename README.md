@@ -70,3 +70,9 @@ $ echo '0,0' > Tank/sensor.csv
             Select the filter that you want to run
         - If you want to stop the filter:
             Filters -> Stop filtering
+
+### 7. Generate the datasets
+Open a new attacker node. Run the tcpdump
+```sh
+tcpdump -i [network_interface] -w [filename].pcap
+```
