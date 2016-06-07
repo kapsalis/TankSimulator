@@ -1,0 +1,34 @@
+set ns [new Simulator]
+source tb_compat.tcl
+
+# Nodes
+set Attacker [$ns node]
+tb-set-node-os $Attacker Ubuntu1404-64-STD
+
+set PLC [$ns node]
+tb-set-node-os $PLC Ubuntu1404-64-STD
+
+set Pump [$ns node]
+tb-set-node-os $Pump Ubuntu1404-64-STD
+
+set SCADA [$ns node]
+tb-set-node-os $SCADA Ubuntu1404-64-STD
+
+set SensorH [$ns node]
+tb-set-node-os $SensorH Ubuntu1404-64-STD
+
+set SensorL [$ns node]
+tb-set-node-os $SensorL Ubuntu1404-64-STD
+
+set Tank [$ns node]
+tb-set-node-os $Tank Ubuntu1404-64-STD
+
+set Valve [$ns node]
+tb-set-node-os $Valve Ubuntu1404-64-STD
+
+# Lans
+set lan0 [$ns make-lan "$Attacker $PLC $SCADA" 100000.0kb 0.0ms]
+set lan1 [$ns make-lan "$Attacker $PLC $Pump $SensorH $SensorL $Valve" 100000.0kb 0.0ms]
+
+$ns rtproto Static
+$ns run
