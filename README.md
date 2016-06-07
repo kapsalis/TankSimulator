@@ -1,8 +1,11 @@
 ## WATER TANK SIMULATOR
-#### with the use of DETERLAB
+    Implemented by: Jasdheer Maan, Michail Kapsalakis, and Tho Le Phuoc
+    Instructor: Davide Fauri
+    
+    For the IST Seminar in Technology University of Eindhoven
+    2016
 
-How to run the WATER TANK Simulator in DeterLAB
-
+### How to run the WATER TANK Simulator in DeterLAB
 ### 1. Create an experiment
     Copy the model.ns file to generate the topology with these 8 nodes:
     - SCADA
@@ -24,7 +27,7 @@ How to run the WATER TANK Simulator in DeterLAB
     - python-setuptools
     - modbus_tk in every node (except of Tank and Attacker nodes). 
     - ettercap (manually the last version) and tcpdump in attacker node
-    
+
     If you want to run the monitors, install in SCADA or PLC node:
     - python-matplotlib
     - tightvncserver
