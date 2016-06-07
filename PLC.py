@@ -92,7 +92,7 @@ def sensors(client_H,  client_L):
         #print "-----------------"
         
         ##Opens a file and writes the state of the tank on it. The graph will use this value
-        state_w =  open('Tank/real_state.csv', 'w')
+        state_w =  open('Tank/plc_tank_state.csv', 'wb')
         st_writer = csv.writer(state_w)
         st_writer.writerow([state])
         
