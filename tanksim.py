@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+
+## Water Tank Simulator
+## It simulates the operation of the real tank.
+## It changes the state of the two sensors according to the state of pump and valve, and the time
+
 import threading
 import csv
 import time
