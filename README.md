@@ -1,5 +1,4 @@
 ## WATER TANK SIMULATOR
-#### with the use of DETERLAB
 
 How to run the WATER TANK Simulator in DeterLAB
 
