@@ -31,7 +31,6 @@
     If you want to run the monitors, install in SCADA or PLC node:
     - python-matplotlib
     - tightvncserver
-    - Export documents as Markdown, HTML and PDF
 
 ### 5. Run the python files
     Get root privileges in each node and run the python files.
